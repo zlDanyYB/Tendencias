@@ -1,0 +1,51 @@
+crear libro:
+{
+    
+    "titulo": "Cien años de soledad",
+    "pages": 100,
+    "created": "2024-05-24",
+    "categoriaDany": {
+      "id":1
+    }
+    
+}
+
+mostar con relacion:
+{
+  "id": 7,
+  "titulo": "Cien años de soledad",
+  "pages": 100,
+  "created": "2024-05-23",
+  "categoriaDany": {
+    "id": 1,
+    "name": null,
+    "enable": false
+  }
+ 
+}
+
+get de todos los daots creados:
+[
+  {
+    "id": 7,
+    "titulo": "Cien años de soledad",
+    "pages": 100,
+    "created": "2024-05-23",
+    "categoriaDany": {
+      "id": 1,
+      "name": "suspenso",
+      "enable": true
+    },
+    "categoria": {
+      "id": 1,
+      "name": "suspenso",
+      "enable": true
+    }
+  }
+]
+metodo delete
+    //metodo delete
+    @DeleteMapping("/titulo/{titulo}")
+thunder:
+http://localhost:9003/libroDany/titulo/Cien años de soledad
+
